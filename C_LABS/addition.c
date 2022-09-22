@@ -6,10 +6,10 @@ int main (void)
 int sum=0;
 int n1=0;
 int n2=0;
-printf("Enter first number:\n")
+printf("Enter first number:\n");
 scanf("%d",&n1);
 
-printf("Enter second number:\n")
+printf("Enter second number:\n");
 scanf("%d",&n2);
 
 sum=n1+n2;
