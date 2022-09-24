@@ -10,4 +10,11 @@ In bcalabs repository, C_LABS folder is for storing all the C programs for the C
 
 This lab is being used for understanding the C Programming langauge.
 
-##Propose changes if anything updated in code
+##How to contribute to bcalabs Repository
+
+1. Fork the bcalabs repository to your git.
+2. Do the changes and commit the changes to your repository.
+3. Create Pull request from your repo/branch to padalgharearjun/bcalabs.
+4. We will review the changes and decide to merge the request.
+
+Thanks for contributing.
