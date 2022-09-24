@@ -2,7 +2,7 @@
 
 BCA Labs are for storing all the coding labs here in github and collaborate will comunity to learn more efficiently. 
 
-##C Programming Labs '
+##C Programming Labs
 
 In bcalabs repository, C_LABS folder is for storing all the C programs for the C labs. you can refer the codes available here in C_LABS or you can write your C program codes and submit the Pull requests, we will happy to include them here in padalgharearjun\bcalabs repository.
 
@@ -18,3 +18,4 @@ This lab is being used for understanding the C Programming langauge.
 4. We will review the changes and decide to merge the request.
 
 Thanks for contributing.
+![image](https://user-images.githubusercontent.com/113876493/192103445-ca9b08bf-7cb4-486b-b99c-3606d48c2098.png)
