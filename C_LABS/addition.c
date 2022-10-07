@@ -14,7 +14,7 @@ scanf("%d",&n2);
 
 sum=n1+n2;
 
-printf("Sum of %d and %d is:%d",sum,n1,n2);
+printf("Sum of %d and %d is:%d",n1,n2,sum);
 
 return 0;
 }
