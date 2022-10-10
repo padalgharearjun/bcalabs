@@ -23,7 +23,10 @@ int main()
     printf ("pptr data (pptr): %p \n", pptr);
     printf ("pptr address (&pptr):%p \n", &pptr);
     
-    
+    printf("Size of pointer variable: %lu \n", sizeof(ptr));
+    printf("Size of int variable: %d \n", sizeof(age));
+    printf("Size of *ptr variable: %lu \n", sizeof(*ptr));
+
  
     return 0;
 }
