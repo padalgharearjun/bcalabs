@@ -26,7 +26,7 @@ int main()
     node_at_end(head, 6);
     node_at_end(head, 7);
     
-    
+    printf("%d",head->id);
     
     return 0;
 }
