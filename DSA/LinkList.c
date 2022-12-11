@@ -1,56 +1,78 @@
+
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef struct student
-{
-    int id;
-    struct student *link;
-}student;
 
-//function to insert node at end of the link list
-void node_at_end ( student * head, int id);
+typedef struct node
+{
+    int data;
+    struct node * link;
+}node;
+
+void node_at_beg(node ** head, int data); //function to add node at the begining of the Link List
+
+node * node_at_end(node * ptr, int data); //function to add node at the end of the Link List
 
 int main()
 {
-    student * head;
     
-    //1st node and head pointer
-    head= (student *) malloc (sizeof(student));
-    head->id = 1;
-    head->link = NULL;
+    node * head; //head pointer
     
-    node_at_end(head, 2);
-    node_at_end(head, 3);
-    node_at_end(head, 4);
-    node_at_end(head, 5);
-    node_at_end(head, 6);
-    node_at_end(head, 7);
+    node * ptr; //pointer to traverse the LL
     
-    printf("%d",head->id);
+    
+    
+    
+    //Created Link List with first node
+    head=(node *) malloc (sizeof(node));
+    head->data=0;
+    head->link=NULL;
+    
+    
+    ptr=head;
+    //ptr pointer to travers to the last node of LL
+    while(ptr->link != NULL)
+    {
+       ptr=ptr->link; 
+    }
+    
+    
+    
+    
+
+    node_at_beg(&head, 2);
+    node_at_beg(&head, 1);
+    
+    ptr= node_at_end(ptr, 3);
+    ptr= node_at_end(ptr, 4);
+    
+    node_at_beg(&head, 0);
     
     return 0;
 }
 
-void node_at_end ( student * head, int id)
+node * node_at_end(node * ptr, int data)
 {
-  student * temp;
-  student * ptr;
-  
-  //create node
-  temp=(student *) malloc (sizeof(student));
-  temp->id=id;
-  temp->link=NULL;
-  
-  //search end of the link list
-  ptr=head;
-  
-  while(ptr->link != NULL)
-  {
-      ptr=ptr->link;
-  }
-  
-  //linking temp node to last node of the link list
-  ptr->link=temp;
-  
-  
+    node * temp;
+    temp=(node *) malloc (sizeof(node));
+    temp->data= data;
+    temp ->link= NULL;
+    
+    ptr->link= temp;
+    
+    return temp;
+}
+
+
+void node_at_beg(node ** head, int data)
+{   
+    node * ptr;
+    ptr=(node *) malloc (sizeof(node));
+    ptr->data=data;
+    
+    
+    ptr->link=*head;
+    *head=ptr;
+    
+
 }
