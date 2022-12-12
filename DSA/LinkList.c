@@ -48,7 +48,7 @@ int main()
     ptr= node_at_end(ptr, 2);
     ptr= node_at_end(ptr, 3);
     
-    node_at_beg(&head, 5);
+    node_at_pos (head, 4, 3);
     
     return 0;
 }
@@ -71,13 +71,11 @@ void node_at_pos(node * head, int data, int pos)
         
     }
     
+    //create links for previous and next node
+    temp->link=ptr->link;
     ptr->link=temp;
     
-    
-    
-    
-    
-    
+   
     
 }
 
@@ -93,7 +91,7 @@ node * node_at_end(node * ptr, int data)
     return temp;
 }
 
-//WIP
+
 void node_at_beg(node ** head, int data)
 {   
     node * ptr;
