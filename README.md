@@ -19,3 +19,8 @@ In bcalabs repository, C_LABS folder is for storing all the C programs for the C
 
 Thanks for contributing.
 
+**List of Programs**
+1. Write a program to display "Welcome to C Lab".
+2. Write a program to show the execution of main program.
+
+
